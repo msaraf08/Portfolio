@@ -1,0 +1,12 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #111, #333);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
