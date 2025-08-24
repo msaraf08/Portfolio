@@ -7,6 +7,7 @@
     <title>Manish Saraf | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,7 +17,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">Manish<span class="text-success">.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -43,6 +45,14 @@
                 <a href="#contact" class="btn btn-success me-2">Get in Touch</a>
                 <a href="#projects" class="btn btn-outline-success">View My Work</a>
             </div>
+            <div class="text-center mt-4">
+                <a href="https://www.linkedin.com/in/manish-saraf-897b66146/" class="text-white me-3"
+                    aria-label="LinkedIn profile"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/msaraf08" class="text-white me-3" aria-label="GitHub profile"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:manish.saraf1994@gmail.com" class="text-white" aria-label="Send an email"><i
+                        class="fas fa-envelope fa-2x"></i></a>
+            </div>
         </div>
     </section>
 
@@ -51,27 +61,155 @@
             <h2 class="text-center mb-4">About Me</h2>
             <p class="text-center w-75 mx-auto">
                 I’m Manish, currently pursuing BCA at Lovely Professional University.
-                Passionate about web development (specially backend) with skills in HTML, CSS, JS, Node.js, and Express.
+                Passionate about web development (especially backend) with skills in HTML, CSS, JS, Node.js, and
+                Express.
                 Certified in Digital Accessibility Testing, aiming to build inclusive digital experiences.
             </p>
         </div>
     </section>
 
-    <section id="skills" class="py-5 bg-light">
-        <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row text-center">
-                <div class="col-md-3 mb-3"><i class="fab fa-html5 fa-3x text-danger"></i>
-                    <h5>HTML</h5>
+    <section id="skills" class="py-5">
+        <div class="container text-center">
+            <span class="badge bg-success rounded-pill px-3 py-2 mb-3">
+                <i class="bi bi-star-fill me-1"></i> Skills & Expertise
+            </span>
+            <h2 class="fw-bold mb-3">What I Bring to the Table</h2>
+            <p class="text-muted mb-5">
+                A comprehensive skill set built through continuous learning and hands-on experience
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100 rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-3 p-2 fs-4 me-2">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Programming Languages</h5>
+                        </div>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>JavaScript</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Kotlin</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>C++</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>C</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3"><i class="fab fa-css3-alt fa-3x text-primary"></i>
-                    <h5>CSS</h5>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100 rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-3 p-2 fs-4 me-2">
+                                <i class="bi bi-box"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Frameworks & Libraries</h5>
+                        </div>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>React</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Node.js</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bootstrap</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Express.js</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3"><i class="fab fa-js fa-3x text-warning"></i>
-                    <h5>JavaScript</h5>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100 rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-3 p-2 fs-4 me-2">
+                                <i class="bi bi-stack"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Tools & Platforms</h5>
+                        </div>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>MongoDB</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>MySQL</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>VS Code</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Git</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3"><i class="fab fa-node-js fa-3x text-success"></i>
-                    <h5>Node.js</h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="soft-skills" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Soft Skills & Personal Qualities</h2>
+            <p class="text-muted mb-5">The human skills that make technical expertise truly effective</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-danger fs-1 mb-3">
+                            <i class="bi bi-puzzle-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Problem-Solving Skills</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-success fs-1 mb-3">
+                            <i class="bi bi-list-check"></i>
+                        </div>
+                        <h5 class="fw-bold">Project Management</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-info fs-1 mb-3">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Team Leadership</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-success fs-1 mb-3">
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Adaptability & Learning Agility</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-warning fs-1 mb-3">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Communication</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-4 p-4">
+                        <div class="text-pink fs-1 mb-3">
+                            <i class="bi bi-lightning-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Critical Thinking</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <div class="col-md-3">
+                    <h3 class="text-success fw-bold">15+</h3>
+                    <p class="mb-0">Technologies</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-info fw-bold">4+</h3>
+                    <p class="mb-0">Major Projects</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-warning fw-bold">1+</h3>
+                    <p class="mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-danger fw-bold">100%</h3>
+                    <p class="mb-0">Commitment</p>
                 </div>
             </div>
         </div>
@@ -81,14 +219,20 @@
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-4">Certifications</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/vision-aid-digital-accessibility-testing.jpg" alt="Certificate 1"
-                        class="img-fluid rounded shadow">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/vision-aid-digital-accessibility-testing.jpg"
+                        alt="Digital Accessibility Testing Certificate" class="img-fluid rounded shadow">
                     <p class="mt-2 text-center">Digital Accessibility Testing</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="assets/html-css-js-certificate.jpeg" alt="Certificate 2" class="img-fluid rounded shadow">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/html-css-js-certificate.jpeg" alt="Web Development Certificate"
+                        class="img-fluid rounded shadow">
                     <p class="mt-2 text-center">Web Development using HTML, CSS and JavaScript</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/hackathon.jpg" alt="Hackathon Certificate" class="img-fluid rounded shadow">
+                    <p class="mt-2 text-center">Demonstrated exceptional problem-solving skills and innovation in a
+                        competitive programming environment.</p>
                 </div>
             </div>
         </div>
@@ -99,8 +243,8 @@
             <h2 class="text-center mb-4">Projects</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="card shadow">
-                        <img src="assets/real-estate.png" class="card-img-top" alt="Project 1">
+                    <div class="card shadow h-100">
+                        <img src="assets/real-estate.png" class="card-img-top" alt="Real Estate Website Project">
                         <div class="card-body">
                             <h5 class="card-title">Real Estate Website</h5>
                             <p class="card-text">A responsive real estate platform built with HTML, CSS, JS, and MySQL.
@@ -109,11 +253,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card shadow">
-                        <img src="assets/netflixClome.png" class="card-img-top" alt="Project 2">
+                    <div class="card shadow h-100">
+                        <img src="assets/netflixClome.png" class="card-img-top" alt="Netflix Clone Project">
                         <div class="card-body">
                             <h5 class="card-title">Netflix Clone</h5>
-                            <p class="card-text">A Replica of Netflix subscription and offers page using HTML and CSS .
+                            <p class="card-text">A replica of Netflix's subscription and offers page using HTML and CSS.
                             </p>
                         </div>
                     </div>
@@ -123,35 +267,55 @@
     </section>
 
     <section id="education" class="py-5">
-        <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">Education</h2>
-            <ul class="list-group list-group-flush w-50 mx-auto">
-                <li class="list-group-item">BCA, Lovely Professional University (2024 - Present)</li>
-                <li class="list-group-item">12th CBSE, Aster Public School (2012)</li>
-            </ul>
-        </div>
-    </section>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Education</h2>
+            </div>
 
-    <section id="faq" class="py-5 bg-light">
-        <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">FAQ</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">What
-                            technologies do you use?</button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">I use HTML, CSS, JS, Node.js, Express, and SQL/MongoDB.</div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 p-4 text-white"
+                        style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-graduation-cap fa-2x me-3"></i>
+                            <h5 class="fw-bold mb-0">Bachelor of Computer Applications (BCA)</h5>
+                        </div>
+                        <h6 class="mb-1">Lovely Professional University</h6>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Punjab, India</p>
+                        <p class="small mb-1">Since 2024</p>
+                        <p class="mb-0">Pursuing an undergraduate degree in computer applications with a focus on
+                            software development, database management, and system design.</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Are
-                            you available for freelance work?</button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">Yes, you can reach me through the contact form below.</div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 p-4 text-white"
+                        style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-graduation-cap fa-2x me-3"></i>
+                            <h5 class="fw-bold mb-0">Higher Secondary (Class 12th)</h5>
+                        </div>
+                        <h6 class="mb-1">Aster Public School (CBSE)</h6>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>New Delhi, India</p>
+                        <p class="small mb-1">Completed: 2012</p>
+                        <p class="mb-0">Completed my 12th grade with a Commerce stream, focusing on Accountancy,
+                            Business Studies, and Mathematics, which developed my analytical and problem-solving skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 p-4 text-white"
+                        style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-graduation-cap fa-2x me-3"></i>
+                            <h5 class="fw-bold mb-0">Secondary School (Class 10th)</h5>
+                        </div>
+                        <h6 class="mb-1">Aster Public School (CBSE)</h6>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>New Delhi, India</p>
+                        <p class="small mb-1">Completed: 2010</p>
+                        <p class="mb-0">Completed foundational studies in science, mathematics, and general education.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -159,18 +323,156 @@
     </section>
 
     <section id="contact" class="py-5">
-        <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <form class="w-50 mx-auto">
-                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-                <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-                <textarea class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn-success w-100">Send Message</button>
-            </form>
-            <div class="text-center mt-4">
-                <a href="#" class="text-dark me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" class="text-dark me-3"><i class="fab fa-github fa-2x"></i></a>
-                <a href="mailto:your@email.com" class="text-dark"><i class="fas fa-envelope fa-2x"></i></a>
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-success rounded-pill px-3 py-2 mb-3">
+                    <i class="bi bi-chat-dots-fill me-1"></i> Get In Touch
+                </span>
+                <h2 class="fw-bold">Let's Create Something Amazing</h2>
+                <p class="text-muted">
+                    I'm always open to discussing new opportunities, interesting projects, or just having a friendly
+                    chat about technology.
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-7">
+                    <div class="p-4 shadow-sm rounded-4 border bg-light">
+                        <h5 class="fw-bold mb-3">
+                            <i class="bi bi-envelope-paper-fill text-success me-2"></i>
+                            Send Me a Message
+                        </h5>
+                        <p class="text-muted">I'll get back to you within 24 hours</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control rounded-3" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control rounded-3" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" class="form-control rounded-3" placeholder="Subject" required>
+                            </div>
+                            <div class="mt-3">
+                                <textarea class="form-control rounded-3" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-success px-4 rounded-3">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start">
+                            <div class="fs-2 text-danger me-3"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Email</h6>
+                                <small class="text-muted d-block">Drop me a line anytime</small>
+                                <a href="mailto:manish.saraf1994@gmail.com"
+                                    class="text-decoration-none text-dark fw-semibold">
+                                    manish.saraf1994@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <div class="fs-2 text-success me-3"><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Phone</h6>
+                                <small class="text-muted d-block">Let's have a conversation</small>
+                                <a href="tel:+917701998570" class="text-decoration-none text-dark fw-semibold">
+                                    +91 7701998570
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <div class="fs-2 text-primary me-3"><i class="bi bi-linkedin"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">LinkedIn</h6>
+                                <small class="text-muted d-block">Professional networking</small>
+                                <a href="https://www.linkedin.com/in/manish-saraf-897b66146/" target="_blank"
+                                    class="text-decoration-none fw-semibold">
+                                    Connect with me
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <div class="fs-2 text-dark me-3"><i class="bi bi-github"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">GitHub</h6>
+                                <small class="text-muted d-block">Explore my repositories</small>
+                                <a href="https://github.com/msaraf08" target="_blank"
+                                    class="text-decoration-none fw-semibold">
+                                    Check my code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-question-circle-fill text-success me-2"></i>
+                            What's your preferred way to communicate?
+                        </h6>
+                        <p class="text-muted mb-0">
+                            I prefer email for detailed discussions and phone calls for quick clarifications. LinkedIn
+                            is great for professional networking.
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-question-circle-fill text-success me-2"></i>
+                            What's your typical response time?
+                        </h6>
+                        <p class="text-muted mb-0">
+                            I aim to respond to all emails within 24 hours and phone calls the same day. For urgent
+                            matters, LinkedIn messages work best.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-question-circle-fill text-success me-2"></i>
+                            Do you work on freelance projects?
+                        </h6>
+                        <p class="text-muted mb-0">
+                            Yes! I'm open to freelance opportunities, especially projects involving React, Node.js, and
+                            modern web technologies.
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-question-circle-fill text-success me-2"></i>
+                            Are you available for remote work?
+                        </h6>
+                        <p class="text-muted mb-0">
+                            Absolutely! I'm experienced in remote collaboration and have worked with distributed teams
+                            on various projects.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,7 +483,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
